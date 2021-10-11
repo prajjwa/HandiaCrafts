@@ -1,0 +1,66 @@
+body{
+    background-image: url(https://media.istockphoto.com/photos/defocused-lights-background-picture-id1091553934?b=1&k=20&m=1091553934&s=170667a&w=0&h=sTodo8ws91vRFTzQ188ARlKZpDk2WCWqRzPBbIPHMuY=);
+    background-size: cover;
+}
+
+.card-deck{
+    background-color: rgb(250, 225, 240) ;
+    padding-top: 3%;
+    border: 2px solid rgb(156, 61, 201) ;
+  
+}
+
+.card{
+    background-color: rgb(243, 203, 228);
+    transition: 200ms;
+ 
+}
+.card:hover{
+    background-color: rgb(247, 239, 244) ;
+    border: 12px solid rgb(156, 61, 201) ;
+    border-radius: 12%; 
+}
+
+.btn{
+    background-color: rgb(228, 111, 198);
+    border-color: blanchedalmond;
+    border-radius: 40%;
+    border-width:5px ;
+    color: black;
+}
+
+.btn:hover{
+    background-color: rgb(235, 133, 209);
+    color: black;
+}
+.btn:hover{
+    background-color: rgb(253, 146, 226);
+}
+
+#quantity{
+    background-color: rgb(179, 205, 253);
+    font-weight: 600;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+#rup{
+    background-color: rgb(240, 147, 113);
+    margin-bottom: 5%;
+    padding: 5%;
+}
+#feed{
+    color: rgb(63, 23, 23);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.footer{
+    background-image: url();
+}
+
+textarea{
+    background-color: rgb(243, 219, 243);
+    border: 1px solid #f07ca4 ;
+}

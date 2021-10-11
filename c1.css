@@ -1,0 +1,19 @@
+h1{
+    padding-top:30px;
+    color:azure
+}
+
+body{
+
+    background-image: url('http://4.bp.blogspot.com/-bAEyIQ0ubEc/TowhJ7A9DFI/AAAAAAAAAWQ/JTidADCbraI/s1600/Agra_Fort_India.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     background-size: cover;
+
+}
+
+label{
+    color:azure;
+}
+
+
