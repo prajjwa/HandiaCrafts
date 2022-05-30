@@ -6,37 +6,32 @@ body{
 
 .card-deck{
     background-color: rgb(250, 225, 240) ;
-    /* padding-top: 3%; */
-    /* border: 5px solid rgb(156, 61, 201) ; */
-   /* / height :200px; */
-   border: 5px solid #a69;
-   border-radius: 5%;
-   padding: 4px 0px;
-    margin:1px;
+    padding: 3%;
+     border: 0.2em solid rgb(156, 61, 201) ; 
+     border-radius: 5%;
+     margin:1px;
+   
+  
 }
 
 .card{
     background-color: rgb(243, 203, 228);
     transition: 200ms;
-    /* height:500px; */
-    margin:5px;
-    
+    height: 15%;
  
 }
 .card:hover{
     background-color: rgb(247, 239, 244) ;
-    border: 5px solid rgb(156, 61, 201) ;
-    border-radius: 6%; 
+    border: 8px solid rgb(156, 61, 201) ;
+    border-radius: 12%; 
 }
 
 .btn{
     background-color: rgb(228, 111, 198);
     border-color: blanchedalmond;
-    border-radius: 5%;
+    border-radius: 10%;
     border-width:5px ;
-    width:75%;
     color: black;
-    margin:auto;
 }
 
 .btn:hover{
@@ -66,30 +61,18 @@ body{
     font-weight: 600;
 }
 
-
-
-#feedback{
-    border: 5px solid rgb(195, 0, 255);
-   border-radius: 2%;
-   margin:auto;
-
+.footer{
+    background-image: url();
 }
-
-
-#bottom{
-    width:25%;
- 
-    display: block;
-    margin:auto;
-}
-
-
- #btnsec{
-    width:25%;
-    margin:0 8rem;
-} 
 
 textarea{
-    width: 100%;
-    margin: auto;
+    background-color: rgb(243, 219, 243);
+    border: 1px solid #f07ca4 ;
 }
+
+/* .outer{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+} */
+

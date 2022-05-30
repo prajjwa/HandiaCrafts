@@ -20,7 +20,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="author" content="Luvkumar Sharma,Abhishek Sharma,Vinayak Singh,Prajjwal Singh">
+  <meta name="author" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Checkout</title>

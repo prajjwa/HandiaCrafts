@@ -24,7 +24,8 @@
    /* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG1h_2eHJj_-uqVxs-6FvDA5jI9nzRxZVjNg&usqp=CAU  */
    body{
   
-background-image: url('https://www.internationalhandicraft.com/images/media/2020/10/6h6Np13412.jpg');
+/* background-image: url('https://www.internationalhandicraft.com/images/media/2020/10/6h6Np13412.jpg'); */
+background-image:url('https://i.pinimg.com/736x/e1/27/ee/e127eed4ce99e2de434c40bd1b3b4eb0.jpg');
 background-repeat: no-repeat;
 background-attachment: fixed;
  background-size: cover;

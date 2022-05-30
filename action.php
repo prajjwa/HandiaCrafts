@@ -50,6 +50,9 @@
 	if (isset($_GET['remove'])) {
 	  $id = $_GET['remove'];
 
+	 
+
+
 	  $stmt = $conn->prepare('DELETE FROM cart WHERE id=?');
 	  $stmt->bind_param('i',$id);
 	  $stmt->execute();

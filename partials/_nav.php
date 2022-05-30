@@ -13,10 +13,13 @@
           <a class="nav-link active" aria-current="login/signup.php" href="signup.php">Signup</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="login/s=logout.php" href="logout.php">Logout</a>
+          <a class="nav-link active" aria-current="login/s=logout.php" href="../logout.php">Logout</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="login/s=logout.php" href="restock.php">Restock</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="login/s=logout.php" href="contact.php">Feedback</a>
         </li>
         
       </ul>

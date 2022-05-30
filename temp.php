@@ -15,7 +15,7 @@
 <body>
     <!-- Navbar start -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="index.php">&nbsp;&nbsp;TradiKrafts</a>
+        <a class="navbar-brand" href="login.php">&nbsp;&nbsp;TradiKrafts</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,6 +23,9 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-th-list mr-2"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout.php"><i class="fas fa-th-list mr-2"></i>Logout</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="cart.php"><i class="fas fa-shopping-cart"></i> <span id="cart-item"
@@ -62,7 +65,7 @@
                             <form action="" class="form-submit">
                                 <div class="row p-2">
                                     <div id="quantity" class="col-md-6">
-                                        <label for="quant">Quantity-</label>
+                                        <label for="quant">Quantity</label>
                                     </div>
                                     <div class="col-md-6">
                                         <input id="quant" type="number" class="form-control pqty" min="1"
@@ -91,7 +94,7 @@
 
     <?php
 
-if($_SERVER['REQUEST_METHOD']=='POST')
+if($_SERVER['REQUEST_METHOD']=='PUT')
 {
     $feed=$_POST['feedback'];
   
@@ -100,6 +103,17 @@ if($_SERVER['REQUEST_METHOD']=='POST')
   
      $stmt = $conn->prepare("insert into feedback(feedback) values('$feed')");
      $stmt->execute();
+
+     $server_name="localhost";
+     $user="root";
+     $password="";
+     $database="handicraft";
+     
+     $conn=mysqli_connect($server_name,$user,$password,$database);
+     //$sql="select * from customer2 where Email='$email'and Password='$pass'";
+
+     $res=mysqli_query($conn,$stmt);
+     $num=mysqli_num_rows($res);
       
     
 }
@@ -108,22 +122,20 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 ?>
 
     <!-- feedback -->
-    <br><br>
-    <footer>
-        <form action="#">
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-11">
-                    <label id="feed" for="feedback">Any special Requests?</label><br>
-                    <textarea name="feedback" id="feedback" cols="60" rows="3"
-                        placeholder="Type your Feedback here!"></textarea>
-                    <br>
-                    <button class="btn">Submit</button>
-                </div>
-            </div>
-        </form>
-    </footer>
-    <br>
+    <!-- <br><br>
+    <div id="bottom"> 
+
+                      <label id="feed" for="feedback">Any special Requests?</label><br> -->
+                     <!-- <form  method="put"> -->
+                    <!-- <textarea name="feedback" id="feedback" cols="60" rows="3" -->
+                        <!-- placeholder="Type your Feedback here!"></textarea> -->
+                    <!-- <br>  -->
+                     <!-- <button class="btn" id="btnsec">Submit</button> -->
+                     <!-- </form>  -->
+<!-- </div> -->
+    <!-- <br>  -->
+
+    
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
